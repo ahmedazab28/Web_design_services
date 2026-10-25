@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تصميم وبرمجة صفحات هبوط عربية | اسمك</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fbfcfd;--ink:#223049;--mute:#5f6b7f;--line:#e3e8ef;--acc:#2f6fb3;--on-acc:#fff;--card:#eef3f9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fbfcfd;--ink:#223049;--mute:#5f6b7f;--line:#e3e8ef;--acc:#2f6fb3;--on-acc:#fff;--card:#eef3f9}}
+:root[data-theme="dark"]{--bg:#fbfcfd;--ink:#223049;--mute:#5f6b7f;--line:#e3e8ef;--acc:#2f6fb3;--on-acc:#fff;--card:#eef3f9}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.85 "Readex Pro",Tahoma,sans-serif}
+a{color:inherit}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+header .w{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+.brand{font-weight:700;text-decoration:none}
+.brand b{color:var(--acc)}
+.top{font-size:15px;text-decoration:none;border-bottom:1px solid var(--ink)}
+a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{padding:48px 0 72px}
+.tag{font-size:14px;color:var(--mute);margin:0 0 14px}
+h1{font-size:clamp(32px,6.4vw,64px);line-height:1.3;font-weight:700;margin:0 0 22px;max-width:14em}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,color-mix(in srgb,var(--acc) 35%,transparent) 62%)}
+.hero p.l{color:var(--mute);max-width:32em;margin:0 0 30px;font-size:18px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:13px 26px;text-decoration:none;font-weight:500;border-radius:2px}
+.btn.a{background:var(--acc);color:var(--on-acc)}
+.alt{margin-inline-start:16px;font-size:15px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 30px}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid var(--line)}
+.rows li:first-child{border-top:1px solid var(--line)}
+.rows .n{color:var(--acc);font-weight:700;font-variant-numeric:tabular-nums}
+.rows b{display:block;font-size:19px}
+.rows span{color:var(--mute);font-size:16px}
+.plans{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);background:var(--card);max-width:420px}
+.plans>div{padding:26px 22px;border-inline-end:1px solid var(--line)}
+.plans>div:last-child{border:0}
+.plans h3{margin:0;font-size:17px;color:var(--mute);font-weight:500}
+.price{font-size:34px;font-weight:700;margin:6px 0 14px}
+.price small{font-size:15px;font-weight:400;color:var(--mute)}
+.plans ul{margin:0;padding:0 18px 0 0;font-size:15.5px;color:var(--mute)}
+.plans .hot{background:color-mix(in srgb,var(--acc) 9%,var(--card))}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:0;padding:0;list-style:none}
+.steps li{border-top:3px solid var(--ink);padding-top:12px;font-size:15.5px;color:var(--mute)}
+.steps b{display:block;color:var(--ink);font-size:18px}
+.work{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line);padding:26px;background:var(--card)}
+.work p{margin:0;color:var(--mute);max-width:30em}
+.work b{display:block;color:var(--ink);font-size:20px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:500;list-style:none}
+summary::after{content:"+";float:left;color:var(--acc);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin:10px 0 0;color:var(--mute)}
+.cta{background:var(--card);color:var(--ink);border-top:1px solid var(--line);text-align:center;padding:64px 20px}
+.cta h2{font-size:clamp(26px,5vw,40px);margin-bottom:14px}
+.cta p{opacity:.75;margin:0 0 26px}
+.cta .btn{background:var(--acc);color:var(--on-acc)}
+.cta .m{margin-top:22px;font-size:15px;opacity:.85}
+footer{padding:22px 0;color:var(--mute);font-size:14px}
+@media (max-width:760px){.plans,.steps{grid-template-columns:1fr}.plans>div{border-inline-end:0;border-bottom:1px solid var(--line)}.alt{display:block;margin:16px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="brand" href="#">اسمك<b>.</b></a><a class="top" href="#contact">تواصل معي</a></div></header>
+
+<main>
+<div class="w hero">
+<p class="tag">مصمم ومبرمج مواقع • القاهرة</p>
+<h1>صفحة واحدة <em>تعرّف الناس</em> بنشاطك وتخليهم يتصلوا بيك.</h1>
+<p class="l">بصمّم وببرمج صفحات هبوط عربية للشركات والمصانع والعيادات. سريعة على الموبايل، وواضحة، ومبنية على نشاطك مش على قالب جاهز.</p>
+<a class="btn a" href="https://wa.me/201068398689">ابعتلي على واتساب</a>
+<a class="alt" href="#work">شوف نموذج من شغلي ←</a>
+</div>
+
+<section><div class="w">
+<h2>اللي هتاخده</h2>
+<p class="sub">كل صفحة بتتسلّم جاهزة للنشر.</p>
+<ol class="rows">
+<li><span class="n">01</span><div><b>تصميم مخصص لهويتك</b><span>ألوان وخطوط وترتيب أقسام بيناسب نشاطك، من غير قوالب مكررة.</span></div></li>
+<li><span class="n">02</span><div><b>يشتغل على كل الشاشات</b><span>موبايل وتابلت وكمبيوتر، والكتابة عربي من اليمين لليسار.</span></div></li>
+<li><span class="n">03</span><div><b>أزرار تواصل مباشرة</b><span>اتصال وواتساب وإيميل بضغطة، ونموذج لطلب عرض سعر.</span></div></li>
+<li><span class="n">04</span><div><b>نشر على رابط شغال</b><span>أرفعها لك على استضافة، ولو معاك دومين أربطه.</span></div></li>
+</ol>
+</div></section>
+
+<section><div class="w">
+<h2>الأسعار</h2>
+<p class="sub">سعر ثابت للصفحة الواحدة.</p>
+<div class="plans">
+<div class="hot"><h3>صفحة هبوط عربية</h3><div class="price">٥ <small>دولار</small></div><ul><li>صفحة واحدة، حتى ٦ أقسام</li><li>متجاوبة مع الموبايل</li><li>نموذج تواصل وواتساب</li><li>تعديلان</li><li>التسليم خلال ٣ إلى ٥ أيام</li></ul></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>إزاي بنشتغل</h2>
+<p class="sub">أربع خطوات بسيطة.</p>
+<ol class="steps">
+<li><b>تبعتلي المحتوى</b>اسم النشاط والشعار والنصوص وبيانات التواصل.</li>
+<li><b>أعرضلك التصميم</b>تشوف الشكل وتقولي رأيك.</li>
+<li><b>التعديلات</b>أعدّل حسب ملاحظاتك في الحدود المتفق عليها.</li>
+<li><b>التسليم</b>الصفحة منشورة وشغالة، وملفاتها عندك.</li>
+</ol>
+</div></section>
+
+<section id="work"><div class="w">
+<h2>نموذج من الشغل</h2>
+<p class="sub">&nbsp;</p>
+<div class="work">
+<div><b>صفحة رئيسية لمصنع مستلزمات طبية</b><p>واجهة عربية بجدول منتجات ومراحل إنتاج وشهادات جودة ونموذج طلب عرض سعر. (نموذج تصميم بمحتوى تجريبي)</p></div>
+<a class="btn" href="https://azab889900-gif.github.io/alshefa-med/" target="_blank" rel="noopener">افتح النموذج</a>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>أسئلة شائعة</h2>
+<p class="sub">&nbsp;</p>
+<details><summary>محتاج إيه عشان نبدأ؟</summary><p>اسم النشاط، ونبذة عنه، وبيانات التواصل، والشعار لو موجود. والباقي نظبطه سوا.</p></details>
+<details><summary>ممكن أعدّل عليها بعد التسليم؟</summary><p>أكيد، التعديلات المتفق عليها مجانية. وأي تعديل بعدها بيتحدد له سعر بسيط.</p></details>
+<details><summary>الصفحة هتظهر في جوجل؟</summary><p>بجهزها بعناوين ووصف مناسبين، لكن ظهورها في الترتيب بيعتمد على عوامل كتير مش بس الصفحة.</p></details>
+<details><summary>ينفع متجر إلكتروني؟</summary><p>الخدمة دي لصفحات الهبوط والتعريف بالنشاط، مش المتاجر.</p></details>
+</div></section>
+</main>
+
+<div class="cta" id="contact">
+<h2>عندك نشاط محتاج صفحة؟</h2>
+<p>قولي إيه هو، وأرد عليك بالسعر والمدة.</p>
+<a class="btn" href="https://wa.me/201068398689">واتساب: 01068398689</a>
+<div class="m"><a href="mailto:azb46041@gmail.com" dir="ltr">azb46041@gmail.com</a> • القاهرة، مصر</div>
+</div>
+<footer><div class="w">© اسمك. كل الحقوق محفوظة.</div></footer>
+</body>
+</html>
